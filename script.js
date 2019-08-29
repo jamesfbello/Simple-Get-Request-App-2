@@ -15,7 +15,7 @@ function getDogImage(numInput) {
 function displayResults(responseJson) {
   console.log(responseJson);
   //replace the existing image with the new one
-  // Option 1
+  // Option 1 gives 404 Error
   $('.results-img').replaceWith(
     `<img src="${responseJson.message}" class="results-img">`
   )
